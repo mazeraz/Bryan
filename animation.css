@@ -1,0 +1,39 @@
+html {
+    scroll-behavior:smooth ;
+}
+
+/* Style for the floating button */
+#scrollToTopBtn {
+    position: fixed;
+    font-size: 10px;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background-color:#f6ef57 ; /* Button color */
+    color: rgba(0, 0, 0, 0.877);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(250, 250, 250, 0.993);
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show the button when scrolling down 100px */
+.show {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    font-weight: 1000;
+    text-shadow: white 2px 0px 1px;
+}
+
+footer {
+    background-color: #f6ef57;
+    width: 100%;
+    height: 100px;
+}
