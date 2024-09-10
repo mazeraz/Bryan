@@ -26,17 +26,18 @@
 
 
 
-  <div class="tools-container2">   
-  <div class="tools-item2"><img src="img/html.png"  alt="html5"><h4>HTML</h4></div>
-
-  <div class="tools-item"><img src="img/css-style.png" alt="html5"><h4>CSS</h4></div>
-
-  <div class="tools-item"><img src="img/java-script.png" alt="html5"><h4>JavaScript</h4></div>
-</div>
 <div class="tools-container2">   
-  <div class="tools-item2"><img src="img/react.png"  alt="html5"><h4>React</h4></div>
+      <div class="tools-item2"><img src="img/html.png"  alt="html5"><h4>HTML</h4></div>
 
-  <div class="tools-item2"><img src="img/bootstrap.png" alt="html5"><h4>Bootsrap</h4></div>
+      <div class="tools-item"><img src="img/css-style.png" alt="html5"><h4>CSS</h4></div>
+
+      <div class="tools-item"><img src="img/java-script.png" alt="html5"><h4>JavaScript</h4></div>
+</div>
+
+<div class="tools-container2">   
+      <div class="tools-item2"><img src="img/react.png"  alt="html5"><h4>React</h4></div>
+
+      <div class="tools-item2"><img src="img/bootstrap.png" alt="html5"><h4>Bootsrap</h4></div>
 </div>
 
 
@@ -52,3 +53,34 @@ z-index: 10;
 <div id="showDiv1Button"><button  id="btn_diva" >Front-end</button>
 <a style="color: #f6ef57; font-size:35px; font-weight: 550;">|</a>
  <button id="showDiv2Button">Back-end</button></div>
+
+
+ <div class="job1" data-aos="fade-right"
+ data-aos-offset="200"
+ data-aos-duration="1000"> 
+         <div class="image-appen"><img src="img/ZKteco.jpg" alt="Jegabytes" ></div>
+
+         <div class="job1-des">
+             <p><a style="font-weight: bold; font-size: 25px;">Technical Support </a><a style="font-weight: bold; font-size: 25px; color: #f6ef57;">- ZkTeco Payroll System</a><br><br> 
+
+                 Jegabytes Computer Center Inc. · <br>2024 I 2024. 6months -  Internship </p>
+         </div>
+ </div>
+
+ <div class="job1" data-aos="fade-right"
+ data-aos-offset="200"
+ data-aos-duration="1000"> 
+         <div class="image-appen"><img src="img/Pan.png" alt="pan-logo-icon" ></div>
+
+         <div class="job1-des">
+             <p><a style="font-weight: bold; font-size: 25px;">Recruitment Staff </a><a style="font-weight: bold; font-size: 25px; color: #f6ef57;">- Panasiatic Solutions</a><br><br> 
+                 <a target="_blank" href="https://www.panasiaticsolutions.com" style="color: white ; text-decoration: underline;">panasiaticsolutions.com</a> <br>
+
+                 Bacolod - PanaSiatic Solutions Call Center<br>2020 I 2020. 2week - Immersion </p>
+         </div>
+ </div>
+
+ topper
+ aboutme
+ experience
+ tools 

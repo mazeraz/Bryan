@@ -33,7 +33,7 @@ body {
 
 
 .imageprofile img {
-    width: 330px;
+    width: 280px;
     height: auto;
     animation-duration: 1.4s;
     animation-name: imageprofile; 
@@ -128,13 +128,17 @@ body {
 
   }
 
+  .topnav a.active {
+    color: #f6ee57; /* Change this color to whatever you prefer */
+}
+
 
 
   
 #tools {
     height: 100vh;
     width: 100%;
-    border: rgba(255, 255, 255, 0) solid 1px;
+    background: #f6ee57;
 
 }
 
@@ -143,11 +147,13 @@ body {
     width: 70%;
     position: relative;
     margin: 0 auto;
-    margin-top: 70px;
 
 }
 
-
+#all-tools-items {
+    position: relative;
+    padding-top: 60px;
+}
 
 
 .tools-selector {
@@ -155,8 +161,8 @@ body {
     width: 290px;
     border-radius: 20px 20px ;
     padding: 10px;
-    box-shadow:  #f6ee57 2px 2px ;
-    border: #f6ee57 solid 2px;
+    box-shadow:  #1a1a1a 2px 2px ;
+    border: #1a1a1a solid 2px;
     text-align: center;
 }
 
@@ -180,7 +186,7 @@ body {
     cursor: pointer;
     font-weight: 500;
     font-family: roboto, sans-serif;
-    color: rgba(255, 255, 255, 0.719);
+    color: #1a1a1a83;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -194,7 +200,7 @@ body {
 }
 
 .toggle-button.selected {
-    color: white;
+    color: #1a1a1a;
     font-size: 1.7rem;
 
 }
@@ -221,7 +227,7 @@ body {
     
     text-align: center;
     justify-items: center;
-    color: #f2f2f2;
+    color: #1a1a1a;
     font-family: roboto, sans-serif;
 
 }
@@ -232,6 +238,20 @@ body {
     width: 120px;
 }
 
+.topnav a.section3-visible {
+    color:#111111; /* Change this color as desired */
+    font-weight: 500;
+
+}
+
+.topnav #tools-glow-only-whenvis-visible {
+    color: pink;
+}
+
+#section3 {
+    border: #f2f2f200 solid 1px;
+    background-color:#f6ee57;
+}
 
 
 
@@ -243,7 +263,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     mix-blend-mode: difference;
-
+    transition: color 0.5s ease; /* Adds a transition effect */
     transform: translate(-50%, 50%);
 
   }
@@ -308,7 +328,7 @@ body {
 }
 
 .namemain p {
-    font-size: 30px ;
+    font-size: 20px ;
 
 }
 
@@ -344,6 +364,7 @@ body {
     border-radius: 7px 7px ;
     color: #f2f2f2;
     text-decoration: none;
+    
 
 }
 .center-front-nav2 {
@@ -351,6 +372,7 @@ body {
     text-align: right;
     font-size: 17px;
     font-family: roboto, sans-serif;
+    
 
 }
 
@@ -425,15 +447,13 @@ body {
 
 
 .experience-wrapper {
-
     position: relative;
     padding: 40px;
     background-color: #131313;
     font-family: roboto, sans-serif;
     margin: 0 auto;
     margin-top: 100px;
-    width: 1250px;
-    display:block;
+    width: 90%;
     height: auto;
 }
 
@@ -462,28 +482,22 @@ body {
 
  .job1 {
     display: flex;
+    width: 90%;
+    margin-top: 70px;
 }
 
-.job1-des {
-    margin: 0 auto;
+.job1-des{
+    margin-left: 120px ;
 }
 
-.job2 {
-    display: flex;
-}
 
-.job2-des {
-    margin: 0 auto;
-}
 
-.job3 {
-    display: flex;
-}
 
-.job3-des {
-    margin: 0 auto;
-}
+.image-appen {
+    width: fit-content;
+    height: fit-content;
 
+}
 
 
 .image-appen img {
@@ -522,10 +536,10 @@ body {
 }
 
 .aboutme-wrapper p{
+    max-width: 1500px;
     font-size: 18px;
-    text-align: right;
-    justify-content: center;
-
+    text-align: justify;
+    direction:rtl ;
   
 }
 
@@ -535,11 +549,15 @@ body {
 
 }
 
+#divider-aboutme {
+    width: 500px;
+}
+
 
 
 .aboutme-wrapper h1{
     font-size: 35px;
-
+    direction:ltr ;
 }
 
 
@@ -603,6 +621,36 @@ body {
 
 
   @media (max-width: 600px) {
+    #center-mid-all {
+        z-index: 2;
+    }
+
+    .job1 h3 {
+        font-size: 1.4rem;
+
+    }
+
+ 
+
+    .image-appen img {
+        display:grid ;
+    }
+
+    .job1 {
+        display: grid;
+    }
+
+    .job1-des p{
+        margin-top: 5px;
+        margin-left: 0 ;
+
+    }
+
+    .job1-des {
+        margin-left: 0;
+    }
+
+
     .logosec {
         display: none;
     }
@@ -615,7 +663,8 @@ body {
     }
 
     .namemain {
-        margin-top: -50px;
+        position: relative;
+        top: -100px;
     }
 
     .imageprofile img {
@@ -634,18 +683,22 @@ body {
 
     .experience-wrapper {
 
-        display: contents;
+        display:grid;
     }
+
+    #grindstyle-experience-mobile{
+        display: grid;
+    }
+  
 
     .experience-wrapper img {
         height: 110px;
         width: 110px;
     }
 
-    .experience-wrapper  p {
-        padding-left: 20px;
-        font-size: 1rem;
-    }
+ 
+
+ 
    
     #experience-title {
         margin: 0 auto;
@@ -680,10 +733,12 @@ body {
         display: none;
     }
     .aboutme-wrapper p {
+        position: relative;
+        left: 15px;
         font-size: 10px;
     }
     .aboutme-wrapper h1{
-        font-size: 20px;
+        font-size: 1rem;
     }
     .aboutme-wrapper{
         display: grid;
@@ -694,7 +749,7 @@ body {
     }
 
     #element-vert-line {
-        left: 50px;
+        left: 40px;
     }
     #element-vert-line-bot {
         display: block;

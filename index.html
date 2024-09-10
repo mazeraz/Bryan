@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      
 
-    <link rel="icon" href="favicon/favicon.png">
+    <link rel="icon" href="favicon/favicon-mo.jfif">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="animation.css">
@@ -30,10 +30,10 @@
 
     
         <div class="topnav">
-            <a class="active" href="#topper">Home</a>
-            <a class="mix-b" href="#aboutme">About</a>
-            <a class="mix-b" href="#myexperience">Experience</a>
-            <a class="mix-b" href="#tools">Tools</a>
+            <a class="nav-link" href="#topper">Home</a>
+            <a class="nav-link" href="#aboutme">About</a>
+            <a class="nav-link" href="#myexperience">Experience</a>
+            <a id="tools-glow-only-whenvis" class="nav-link" href="#section3">Tools</a>
         </div>
       </div>
     </div>
@@ -43,9 +43,9 @@
 <div class="fronttab">
    <div class="glow-halo" ></div>
 
-   <div id="wrapper-front">
+   <div class="section" id="wrapper-front">
 
-    <div class="imageprofile"><img src="img/bryanpogi1.png" alt="profile-picture" ></div>
+    <div class="imageprofile"><img src="img/Pogi-bryan.png" alt="profile-picture" ></div>
     
         <div class="namemain">
                             <div id="element-vert-line"></div>
@@ -57,7 +57,7 @@
         
                             <h1>Bryan Jayco Raquel</h1>
 
-                                <p style="color:  #f6ef57;">Aspiring Web Developer  </p>
+                                <p style="color:  #f6ef57;">Aspiring Web Developer/Designer  </p>
                                    
                                 <div id="center-mid-all">
                                     <div class="center-front-nav">
@@ -77,34 +77,52 @@
 <!--Frontab-->
 
 <!--Aboutme-->
-<div id="aboutme">
+<section 
+        data-aos="fade-in"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+
+<div class="mouse-scroll">
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+
+</div>
+</section>
+
+<div class="section" id="aboutme">
+    
+    
+
     <div class="aboutme-wrapper"
     data-aos="fade-in"
     data-aos-offset="200"
     data-aos-mirror="true"
-    data-aos-once="false"
-    >
-        <div 
+    data-aos-once="false">
+        <div class="aboutme-h1-aos"
         data-aos="fade-in"
         data-aos-offset="200"
         data-aos-delay="100"
         data-aos-duration="800"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
-       >
+        data-aos-once="false">
+
             <h1>
                 Hi, I’m <a style="color: #f6ef57;">Bryan</a>, A aspiring web designer and 
                 front-end developer from the <a style="color: #f6ef57;">Philippines.</a>
             </h1>
         </div>  
+        <div id="divider-aboutme" ></div>
+
         <div     data-aos="fade-left"
         data-aos-offset="200"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        
-        >
+        data-aos-mirror="true">
+
+
         <div     data-aos="fade-left"
         data-aos-offset="200"
         data-aos-duration="1000"
@@ -113,11 +131,12 @@
         
         >
         <div id="element-vert-line-bot" ></div></div>
+        
             <div class="aboutme-des">
-            <p>I'm an Information System graduate from Carlos Hilado Memorial State University <Br>
-                with a passion for programming. I have basic knowledge in front-end and back-end
-                 development using <a style="color:#f6ef57;">PHP</a> and <a style="color:#f6ef57;">JavaScript.</a> Eager to learn and open to mentorship,
-                 I'm always looking for opportunities to grow personally and professionally.</p>
+            <p style="float: right;"> I'm an Information System graduate from Carlos Hilado Memorial State University 
+                with a passion for programming. I possess foundational skills in front-end and back-end development,
+                 including experience with <a style="color:#f6ef57;">PHP, JavaScript,</a> and <a href="#tools" style="color:#f6ef57;">other technologies</a>. Eager to learn and open to mentorship,
+                 constantly seeking opportunities to grow both personally and professionally in the tech industry</p>
             </div>
         </div>
     </div>
@@ -129,83 +148,95 @@
 
 <!--Experience-->
 
-<div id="experience">
+<div class="section" id="experience">
     <div id="experience-title">
         <div class="glow-halo2" ></div>
 
         <h2>EXPERIENCE</h2>
 
     </div>
-    <div id="myexperience"></div>
+<section
+        data-aos="fade-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
 
+<div class="mouse-scroll2">
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+</div>
+</section>
+
+<!--DO NOT DELETE!--><div id="myexperience"></div><!--DO NOT DELETE!-->
+<div id="grindstyle-experience-mobile">
     <div class="experience-wrapper">
         
 
             <div class="job1" data-aos="fade-right"
             data-aos-offset="200"
             data-aos-duration="1000"> 
-                    <div class="image-appen"><img src="img/Appen-logo.png" alt="appen-logo-icon" ></div>
+            <div class="image-appen"><img src="img/Appen-logo.png" alt="appen-logo-icon" ></div>
 
                     <div class="job1-des">
-                        <p><a style="font-weight: bold; font-size: 25px;">Eye 2d Tracker </a><a style="font-weight: bold; font-size: 25px; color: #f6ef57;">- Appen Space Connect</a><br><br> 
+                        <p><a class="job-name" ><h3>Eye 2d Tracker </a><a style="color: #f6ef57;">- Appen Space Connect</h3></a><br><br> 
                             <a target="_blank" href="https://contributor.appen.com" style="color: white ; text-decoration: underline;">contributor.appen.com</a> <br>
 
-                            2d Segmentation Gating - Eye Tracking Appen Space Connect <br>2020 I 2020. 2months - Part Time </p>
+                            2d Segmentation Gating - Eye Tracking Appen Space Connect <br>2020 I 2020. 2months - <a style="color: #f6ef57;">Part Time</a> </p>
                     </div>
+                    
             </div>
- 
-<br><br><br><br>
 
-
-
-            <div class="job2" data-aos="fade-left"
+            <div class="job1" data-aos="fade-right"
             data-aos-offset="200"
             data-aos-duration="1000"> 
-            
-                <div class="job2-des">
-                    <p><a style="font-weight: bold; font-size: 25px;">Technical Support </a><a style="font-weight: bold; font-size: 25px; color: #f6ef57;">- ZkTeco Payroll System</a><br><br> 
-                        Jegabytes Computer Center Inc. · <br>2024 I 2024. 6months -  Internship </p>
-                </div>
-                <div class="image-appen"><img src="img/ZKteco.jpg" alt="appen-logo-icon" ></div>
-
+                    <div class="image-appen"><img src="img/ZKteco.jpg" alt="Jegabytes" ></div>
+           
+                    <div class="job1-des">
+                        <p><a class="job-name" ><h3>Tecnical Support</a><a style="color: #f6ef57;">- ZkTeco Payroll System</h3></a><br><br> 
+           
+                            Jegabytes Computer Center Inc. · <br>2024 I 2024. 6months - <a style="color: #f6ef57;">Internship</a> </p>
+                    </div>
             </div>
-     
-<br><br><br><br>
-
-        <div class="job3" 
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-duration="1000"
-        > 
-            <div class="image-appen"><img src="img/Pan.png" alt="appen-logo-icon" ></div>
-
-            <div class="job3-des">
-                <p><a style="font-weight: bold; font-size: 25px;">Recruitment Staff </a><a style="font-weight: bold; font-size: 25px; color: #f6ef57;">- Panasiatic Solutions</a><br><br> 
-                    <a target="_blank" href="https://www.panasiaticsolutions.com" style="color: white ; text-decoration: underline;">panasiaticsolutions.com</a> <br>
-
-                Bacolod - PanaSiatic Solutions Call Center<br>2020 I 2020. 2week - Immersion </p>
+           
+            <div class="job1" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"> 
+                    <div class="image-appen"><img src="img/Pan.png" alt="pan-logo-icon" ></div>
+           
+                    <div class="job1-des">
+                        <p><a class="job-name" ><h3>Recruitment Staff</a><a style="color: #f6ef57;">- PanaSiatic Solutions</h3></a><br><br> 
+                            <a target="_blank" href="https://www.panasiaticsolutions.com" style="color: white ; text-decoration: underline;">panasiaticsolutions.com</a> <br>
+           
+                            Bacolod - PanaSiatic Solutions Call Center<br>2020 I 2020. 2weeks - <a style="color: #f6ef57;">Immersion</a> </p>
+                    </div>
             </div>
         </div>
+    </div>       
+</div> 
 
+   
+    
 
-   </div>
-</div>
-
-<div id="divider"></div>
 
 
 <!--Experience-->
+<div id="divider"></div>
 
 <!--Tools-->
-<section id="tools">
-<div class="tools-wrapper"
-data-aos="fade-up"
+<div id="section3" class="section" data-aos="fade-in"
+data-aos-offset="200"
+data-aos-duration="1000">
+<section class="section" id="tools">
+<div  class="tools-wrapper"
+        data-aos="fade-up"
         data-aos-offset="200"
         data-aos-duration="1000">
 
+<div id="all-tools-items">
     <div class="tools-selector">
         <button id="showDiv1Button" class="toggle-button selected">Front-end</button>
-         <a style="color: #f6ef57; font-size:35px; font-weight: 550;">|</a>
+         <a style="color: #1a1a1a; font-size:35px; font-weight: 550;">|</a>
         <button id="showDiv2Button" class="toggle-button">Back-end</button>
     </div>
   
@@ -236,10 +267,11 @@ data-aos="fade-up"
                     <div class="tools-item"><img src="img/firebase.webp" alt="html5"><h4>Firebase</h4></div>
                 </div>
             </div>
-
+</div>
             <script src="index.js"></script>
    
 </div>  
+</div>
 </section>
 
 
