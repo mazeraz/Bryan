@@ -250,6 +250,8 @@ body {
 
 #section3 {
     border: #f2f2f200 solid 1px;
+    height: 100vh;
+    width: 100%;
     background-color:#f6ee57;
 }
 
@@ -436,7 +438,7 @@ body {
 }
 
 #experience {
-
+    height: 100vh;
     color: white;
     width: 100%;
     position: relative;
