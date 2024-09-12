@@ -144,7 +144,7 @@ body {
 
 .tools-wrapper {
     height: 450px;
-    width: 70%;
+    width: 91%;
     position: relative;
     margin: 0 auto;
 
@@ -529,7 +529,7 @@ body {
     margin: 0 auto;
     margin-top: 230px;
     display: flex;
-    width: 1250px;
+    width: 91%;
     height: 350px;
     position: relative;
 
@@ -585,13 +585,13 @@ body {
   }
 
   #element-vert-line-bot {
+    top: 100px;
+     
     position: absolute;
     width: 6px;
     display: none;
     height: 90px;
     background-color: #f6ee57;
-    animation-duration: 1.4s;
-    animation-name: vertline-bot;
 
 
     
@@ -734,14 +734,17 @@ body {
     }
     .aboutme-wrapper p {
         position: relative;
+        top: 100px;
         left: 15px;
-        font-size: 10px;
+        font-size: 0.7rem;
     }
     .aboutme-wrapper h1{
         font-size: 1rem;
     }
-    .aboutme-wrapper{
-        display: grid;
+   
+    .aboutme-wrapper {
+        width: 91%;
+        display:block;
     }
 
     .center-front-nav {
@@ -752,7 +755,7 @@ body {
         left: 40px;
     }
     #element-vert-line-bot {
-        display: block;
+        display: none;
     }
    
   
