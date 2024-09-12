@@ -15,7 +15,7 @@ body {
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
    
@@ -144,7 +144,7 @@ body {
 
 .tools-wrapper {
     height: 450px;
-    width: 91%;
+    width: 70%;
     position: relative;
     margin: 0 auto;
 
@@ -250,8 +250,6 @@ body {
 
 #section3 {
     border: #f2f2f200 solid 1px;
-    height: 100vh;
-    width: 100%;
     background-color:#f6ee57;
 }
 
@@ -438,7 +436,7 @@ body {
 }
 
 #experience {
-    height: 100vh;
+
     color: white;
     width: 100%;
     position: relative;
@@ -490,6 +488,7 @@ body {
 
 .job1-des{
     margin-left: 120px ;
+    font-size: 0.8rem;
 }
 
 
@@ -531,7 +530,7 @@ body {
     margin: 0 auto;
     margin-top: 230px;
     display: flex;
-    width: 91%;
+    width: 1250px;
     height: 350px;
     position: relative;
 
@@ -587,13 +586,13 @@ body {
   }
 
   #element-vert-line-bot {
-    top: 100px;
-     
     position: absolute;
     width: 6px;
     display: none;
     height: 90px;
     background-color: #f6ee57;
+    animation-duration: 1.4s;
+    animation-name: vertline-bot;
 
 
     
@@ -607,6 +606,12 @@ body {
     display: none;
 }
 
+.footer-expander-mobile-view {
+    background-color: #f6ef57;
+    width: 100%;
+    height: 200px;
+    display: none;
+}
 
 
 
@@ -623,9 +628,8 @@ body {
 
 
   @media (max-width: 600px) {
-    .aboutme-des {
-        position: relative;
-        top: -40px;
+    .fronttab {
+        height: 110vh;
     }
 
     #center-mid-all {
@@ -637,9 +641,11 @@ body {
 
     }
 
+
  
 
     .image-appen img {
+        
         display:grid ;
     }
 
@@ -693,21 +699,30 @@ body {
         display:grid;
     }
 
+    .experience-wrapper h3 {    
+        font-size: 1.1rem;
+    }
+
+   
+
+
+
     #grindstyle-experience-mobile{
         display: grid;
     }
   
 
     .experience-wrapper img {
-        height: 110px;
-        width: 110px;
+        height: 80px;
+        width: 80px;
     }
 
  
 
  
-   
+     
     #experience-title {
+        height: 50vh;
         margin: 0 auto;
         display: grid;
     }
@@ -717,11 +732,18 @@ body {
         justify-content: center;
         text-align: center;
         margin: 0 auto;
-
     }
 
-    .tools-wrapper {
+    .footer-expander-mobile-view {
+        display: block;
+    }   
+
     
+
+    .tools-wrapper {
+        width: 100%;
+        background-color:#f6ee57 ;
+        height: 100vh;
         display: grid;
     }
 
@@ -739,19 +761,22 @@ body {
     .topnav {
         display: none;
     }
+    .aboutme-des {
+        position: relative;
+        top:50px;
+    }
+
     .aboutme-wrapper p {
         position: relative;
-        top: 100px;
         left: 15px;
-        font-size: 0.7rem;
+        font-size: 10px;
     }
     .aboutme-wrapper h1{
         font-size: 1rem;
     }
-   
-    .aboutme-wrapper {
+    .aboutme-wrapper{
         width: 91%;
-        display:block;
+        display: block;
     }
 
     .center-front-nav {
@@ -762,7 +787,7 @@ body {
         left: 40px;
     }
     #element-vert-line-bot {
-        display: none;
+        display: block;
     }
    
   
