@@ -623,6 +623,11 @@ body {
 
 
   @media (max-width: 600px) {
+    .aboutme-des {
+        position: relative;
+        top: -40px;
+    }
+
     #center-mid-all {
         z-index: 2;
     }
