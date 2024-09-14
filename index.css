@@ -28,7 +28,23 @@ body {
   
 }
 
+/* Container styles */
+.snap-container {
+  scroll-snap-type: y mandatory; /* Enable vertical snapping */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100vh; /* Full viewport height */
+}
 
+/* Item styles */
+.snap-item {
+  scroll-snap-align: start; /* Aligns the start of each item with the container */
+  height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 1px solid #ddd; /* Optional: visual separation */
+}
 
 
 
@@ -446,6 +462,10 @@ body {
 
 
 
+
+
+
+
 .experience-wrapper {
     position: relative;
     padding: 40px;
@@ -480,6 +500,8 @@ body {
 }
 
 
+
+
  .job1 {
     display: flex;
     width: 90%;
@@ -487,11 +509,17 @@ body {
 }
 
 .job1-des{
+    color: #dddddd;
     margin-left: 120px ;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
+
+.job1 h3 {
+    font-size: 1.4rem;
+   
+}
 
 
 .image-appen {
@@ -530,7 +558,7 @@ body {
     margin: 0 auto;
     margin-top: 230px;
     display: flex;
-    width: 1250px;
+    width: 91%;
     height: 350px;
     position: relative;
 
@@ -737,6 +765,10 @@ body {
     .footer-expander-mobile-view {
         display: block;
     }   
+
+    .tools-selector {
+        display: block;
+    }
 
     
 
