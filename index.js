@@ -69,3 +69,21 @@ document.addEventListener('DOMContentLoaded', function() {
     changeLinkColor();
     window.addEventListener('scroll', changeLinkColor);
 });
+
+
+let lastScrollTop = 0;
+const fixedDiv = document.getElementById('fixedDiv');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if we are scrolling down
+    if (scrollTop > lastScrollTop) {
+        // Add the slide-up class to hide the div
+        fixedDiv.classList.add('slide-up-flogo');
+    } else {
+        // Remove the class to bring the div back down
+        fixedDiv.classList.remove('slide-up-flogo');
+    }
+    lastScrollTop = scrollTop;
+});

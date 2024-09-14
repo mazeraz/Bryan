@@ -22,29 +22,102 @@ body {
 
 }
 
+.float-logo img{ 
+    top: 6px;
+    margin: 0 auto;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 1;
+    
+
+}
+
+
+
+
+
+
+
+.float-logo {
+    display: flex;
+    z-index: 2;
+    color: white;
+    position: fixed;
+    display: flex;
+    border-radius: 10px 10px;
+    height: 50px;
+    width: 50px;
+    background-color:#1a1a1a ;
+    top: 25px;
+    left: 90px;
+    transition: transform 0.3s ease-in-out;
+
+    
+}
+
+.slide-up-flogo {
+    transform: translateY(-200%);
+}
+
+
+.float-logo a{
+    width: 50px;
+    background-color:#1a1a1a ;
+    
+    border-radius: 10px 10px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+
+
+}
+
+.float-logo   a:hover {
+    background-color:#1a1a1a ;
+
+    color: #dddddd;
+    display: flex;
+    width: 150px;
+    padding-left: 50px;
+
+}
+
+.float-logo-text {
+    position: absolute;
+    padding: 15px;
+    height: 50px;
+    width: 100px;
+    font-family:roboto ;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .imageprofile {
     position: inherit;
     top: -100px;
   
 }
 
-/* Container styles */
 .snap-container {
-  scroll-snap-type: y mandatory; /* Enable vertical snapping */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  height: 100vh; /* Full viewport height */
-}
+    scroll-snap-type: y mandatory; /* Enable vertical snapping */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 100vh; /* Full viewport height */
+  }
 
-/* Item styles */
-.snap-item {
-  scroll-snap-align: start; /* Aligns the start of each item with the container */
-  height: 100vh; /* Each section takes full viewport height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  border: 1px solid #ddd; /* Optional: visual separation */
-}
 
 
 
@@ -80,21 +153,19 @@ body {
 
 
 .header {
-    justify-content: center;
+    direction: rtl;
+    display: flex;
     position: fixed;
     z-index: 3;
     width: 100%;
     height: 60px;
 }
 
-.header-item .logosec {
-    position: relative;
-    right: 300px;
-}
+
 
 .header-item .topnav {
     position: relative;
-    left: 300px;
+    padding-right: 100px;
     animation-duration: 1.4s;
     animation-name: topnav ;
 }
@@ -669,7 +740,11 @@ body {
 
     }
 
-
+    .float-logo {
+        position: fixed;
+        top: 15px;
+        left: 20px;
+    }
  
 
     .image-appen img {
