@@ -29,7 +29,7 @@ body {
     height: 35px;
     width: 35px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 5;
     
 
 }
@@ -53,6 +53,8 @@ body {
     top: 25px;
     left: 90px;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
 
     
 }
@@ -62,10 +64,11 @@ body {
 }
 
 
+
 .float-logo a{
     width: 50px;
     background-color:#1a1a1a ;
-    
+    cursor: pointer;
     border-radius: 10px 10px;
     height: 50px;
     position: absolute;
@@ -79,13 +82,15 @@ body {
 
 .float-logo   a:hover {
     background-color:#1a1a1a ;
-
     color: #dddddd;
     display: flex;
     width: 150px;
     padding-left: 50px;
+    z-index: 3;
 
 }
+
+
 
 .float-logo-text {
     position: absolute;
