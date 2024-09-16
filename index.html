@@ -21,25 +21,48 @@
 </head>
 <body>
 <!--head-->
-<div id="topper"></div>
+<div id="home"></div>
 
     <div class="header">
       <div class="header-item">
 
     
         <div class="topnav">
-            <a class="nav-link" href="#topper">Home</a>
+            <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#aboutme">About</a>
             <a class="nav-link" href="#myexperience">Experience</a>
-            <a id="tools-glow-only-whenvis" class="nav-link" href="#section3">Tools</a>
+            <a id="tools-glow-only-whenvis" class="nav-link" href="#tools_section">Tools</a>
         </div>
       </div>
     </div>
 <!--head-->
-<div id="fixedDiv" class="float-logo"><a href="mailto:bryanjayco100@gmail.com">
+<div id="fixedDiv" class="float-logo"><a href="#" class="pauna" id="openPopup">
+
     <div class="float-logo-text"><p>Email me</p></div></a>
-    <img src="favicon/faviconmain1.png" alt="floating-logo">
+    <i class="fa-regular fa-message"></i>
 </div>
+
+
+  <!-- Pop-up box -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popupBox">
+      <span class="close-btn" id="closePopup">&times;</span>
+
+      <div class="wrapper-pop-up">
+      <h3>Welcome to my <a style="color:#f6ef57">portfolio website.</a> Feel free to message me!</h3>
+      <form id="emailForm">
+          <input type="text" id="emailTitle" placeholder="Title" required>
+          <textarea id="emailDescription" placeholder="Description" rows="4" required></textarea>
+          <button type="submit">Send Email</button>
+      </form>
+    </div>
+  </div>
+
+      <!-- Confirmation message -->
+      <div class="confirmation" id="confirmationBox">
+        <p>Successfully sent. Thank you!</p>
+        <button id="closeConfirmation">Close</button>
+    </div>
 
 <!--Frontab-->
 <div id="snap-container">
@@ -231,7 +254,7 @@
 <div id="divider"></div>
 
 <!--Tools-->
-<div id="section3" class="section" data-aos="fade-in"
+<div id="tools_section" class="section" data-aos="fade-in"
 data-aos-offset="200"
 data-aos-duration="1000">
 <section class="section" id="tools">
@@ -257,9 +280,9 @@ data-aos-duration="1000">
                     <div class="tools-item"><img src="img/java-script.png" alt="JavaScript"><h4>JavaScript</h4></div>
               </div>
                     <div class="tools-container">   
-                        <div class="tools-item"><img src="img/react.png"  alt="React"><h4>React</h4></div>
+                        <div class="tools-item"><img src="img/tailwind.png" style="border-radius: 10% ;" alt="tailwind"><h4>Tailwind</h4></div>
                 
-                        <div class="tools-item"><img src="img/bootstrap.png" alt="Bootsrap"><h4>Bootsrap</h4></div>
+                        <div class="tools-item"><img src="img/bootstrap.png" alt="Bootsrap"><h4>Bootstrap</h4></div>
                 </div>
             </div>
 

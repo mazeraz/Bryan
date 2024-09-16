@@ -42,7 +42,7 @@ body {
 
 .float-logo {
     display: flex;
-    z-index: 2;
+    z-index: 1;
     color: white;
     position: fixed;
     display: flex;
@@ -54,20 +54,37 @@ body {
     left: 90px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    animation-duration: 1.4s;
+    animation-name: pop-up-email ;
 
 
     
+}
+
+
+@keyframes pop-up-email {
+    from {
+        opacity: 2% ;
+    }
+    to {
+        opacity: 100% ;
+
+    }
 }
 
 .slide-up-flogo {
     transform: translateY(-200%);
 }
 
-
+.float-logo .pauna {
+    z-index: 100;
+    position: absolute;
+}
 
 .float-logo a{
+    z-index: 100;
     width: 50px;
-    background-color:#1a1a1a ;
+    background-color:#1a1a1a00 ;
     cursor: pointer;
     border-radius: 10px 10px;
     height: 50px;
@@ -81,6 +98,8 @@ body {
 }
 
 .float-logo   a:hover {
+    height: 50px;
+
     background-color:#1a1a1a ;
     color: #dddddd;
     display: flex;
@@ -90,6 +109,14 @@ body {
 
 }
 
+.fa-regular {
+    top: 11px;
+    margin: 0 auto;
+    position: relative ;    
+    
+    z-index: 2 ;
+    font-size: 25px;
+}
 
 
 .float-logo-text {
@@ -103,8 +130,149 @@ body {
 
 
 
+  /* Hidden by default */
+  .popup , .confirmation  {
+    display: none;
+    position: fixed;
+    font-family: roboto, sans-serif;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 70vh;
+    width: 300px;
+    animation-duration: 1.4;
+    animation-name: pop-up-em;
+
+}
+
+@keyframes pop-up-em {
+    from {
+        opacity: 2% ;
+    }
+    to {
+        opacity: 100% ;
+
+    }
+}
 
 
+.confirmation {
+    
+    display: none;
+    font-family: roboto, sans-serif;
+    padding: 20px;
+    background-color: #131313;
+    width: fit-content;
+    height: fit-content;
+    color: #ffffff;
+}
+
+.confirmation h3 {
+    font-size: 1rem ;
+
+}
+
+.confirmation button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color:#f6ee57;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.confirmation button:hover {
+    
+    color: white;
+    background-color:black ;
+    
+}
+
+.popup h3 {
+    color: white;
+    text-align: center;
+    font-size: 1rem ;
+    padding-bottom: 40px;
+
+}
+
+.wrapper-pop-up {
+    margin-top: 70px;
+}
+
+     /* Pop-up message when click email me */
+            /* Dark overlay */
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 999;
+            }
+
+            /* Close button */
+            .close-btn {
+                font-size: 25px;
+                color: white;
+                float: right;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .close-btn:hover {
+                color:#f6ee57;
+                transform: translateY(-3px);
+                
+
+            }
+
+            /* Form styling */
+            .popup form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .popup form input,
+            .popup form textarea {
+                background-color: #1a1a1a;
+                color: #f2f2f2;
+                font-family: roboto, sans-serif;
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .popup form button {
+                padding: 10px;
+                background-color:#f6ee57;
+                color: black;
+                font-weight: 600;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: 0.3s;
+
+            }
+
+            .popup form button:hover {
+                color: white;
+                background-color:black ;
+            }
+      
+           
 
 
 
@@ -263,7 +431,7 @@ body {
 
 
 .box {
-    
+    padding-bottom: 100px;
     align-items: center;
     justify-content: center;
   
@@ -303,6 +471,7 @@ body {
 
 
 .tools-container {
+
     padding: 20px;
     position: relative ;
     margin: 0 auto;
@@ -325,12 +494,13 @@ body {
 }
 
 .tools-item img {
+    
     margin: 18px;
     height: 120px;
     width: 120px;
 }
 
-.topnav a.section3-visible {
+.topnav a.tools_section-visible {
     color:#111111; /* Change this color as desired */
     font-weight: 500;
 
@@ -340,7 +510,8 @@ body {
     color: pink;
 }
 
-#section3 {
+#tools_section {
+
     border: #f2f2f200 solid 1px;
     background-color:#f6ee57;
 }
@@ -496,7 +667,8 @@ body {
 
 .center-front-nav2 a:hover {
     transition-duration: 0.5s;
-    color: #9b9b9b;
+    text-shadow: 2px 2px 5px black  ;
+    color: #fdfdfd;
     background-color: #f6ef57;
     top: -2px;
     position: relative;
@@ -570,7 +742,7 @@ body {
     padding-top: 150px;
     margin: 0 auto;
     font-style: normal;
-    font-size: 8rem;
+    font-size: 9vw;
     text-align: center;
     font-family: 'Larsseit', sans-serif;
 }
@@ -680,10 +852,11 @@ body {
 
   .socials a {
     color: white;
+    transition: 0.3;
   }
 
   .socials a:hover i {
-    color: black;
+    color:#f6ee57;
     transition-duration: 0.5s;
     top: -2px;
     position: relative;
@@ -711,9 +884,10 @@ body {
 }
 
 .footer-expander-mobile-view {
+
     background-color: #f6ef57;
     width: 100%;
-    height: 200px;
+    height: 100px;
     display: none;
 }
 
@@ -843,19 +1017,27 @@ body {
     }
 
     .footer-expander-mobile-view {
-        display: block;
+        z-index: -5;
     }   
 
     .tools-selector {
         display: block;
     }
 
+
+    #tools {
+        height: 120vh;
+        width: 100%;
+        background: #f6ee57;
+    
+    }
     
 
     .tools-wrapper {
         width: 100%;
-        background-color:#f6ee57 ;
         height: 100vh;
+
+        background-color:#f6ee57 ;
         display: grid;
     }
 
