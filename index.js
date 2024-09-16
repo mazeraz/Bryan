@@ -136,7 +136,6 @@ window.addEventListener('scroll', function() {
 
             // Close the form pop-up
             popupBox.style.display = 'none';
-            overlay.style.display = 'none';
 
             // Show confirmation message
             confirmationBox.style.display = 'block';
