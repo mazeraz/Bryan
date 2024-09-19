@@ -36,12 +36,17 @@
       </div>
     </div>
 <!--head-->
-<div id="fixedDiv" class="float-logo"><a href="#" class="pauna" id="openPopup">
+<a href="#" class="" id="openPopup">
+    <div class="emailers" id="emailmefloat">
+        <i class="fa-regular fa-message"></i>
+    </div>
+<div id="fixedDiv" class="float-logo">
+    
+    <div class="float-logo-text"><p>Email me</p></div>
 
-    <div class="float-logo-text"><p>Email me</p></div></a>
-    <i class="fa-regular fa-message"></i>
+ 
 </div>
-
+</a>
 
   <!-- Pop-up box -->
   <div class="overlay" id="overlay"></div>
@@ -49,7 +54,10 @@
       <span class="close-btn" id="closePopup">&times;</span>
 
       <div class="wrapper-pop-up">
-      <h3>Welcome to my <a style="color:#f6ef57">portfolio website.</a> Feel free to message me!</h3>
+        <div class="m-logo">
+         <img class="M" src="img/M.png" alt="M Logo">
+        </div>
+      <h3>Welcome to my <a style="color:#f6ef57">portfolio website.<br></a> Feel free to message me!</h3>
       <form id="emailForm">
           <input type="text" id="emailTitle" placeholder="Title" required>
           <textarea id="emailDescription" placeholder="Description" rows="4" required></textarea>
@@ -196,12 +204,12 @@
 <!--DO NOT DELETE!--><div id="myexperience"></div><!--DO NOT DELETE!-->
 <div id="grindstyle-experience-mobile">
     
-    <div class="experience-wrapper">
+    <div class="experience-wrapper"  data-aos="fade-in"
+   
+    data-aos-easing="ease-in-out">
         
 
-            <div class="job1" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-duration="1000"> 
+            <div class="job1" > 
             <div class="image-appen"><img src="img/Appen-logo.png" alt="appen-logo-icon" ></div>
 
                     <div class="job1-des">
@@ -213,9 +221,7 @@
                     
             </div>
 
-            <div class="job1" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-duration="1000"> 
+            <div class="job1" > 
                     <div class="image-appen"><img src="img/ZKteco.jpg" alt="Jegabytes" ></div>
            
                     <div class="job1-des">
@@ -225,9 +231,7 @@
                     </div>
             </div>
            
-            <div class="job1" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-duration="1000"> 
+            <div class="job1" > 
                     <div class="image-appen"><img src="img/Pan.png" alt="pan-logo-icon" ></div>
            
                     <div class="job1-des">
@@ -306,7 +310,6 @@ data-aos-duration="1000">
 </div>
 </section>
 </div>
-<div class="footer-expander-mobile-view"></div>
 
 <!-- Floating Button -->
 <button id="scrollToTopBtn" onclick="scrollToTop()"

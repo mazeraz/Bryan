@@ -84,3 +84,10 @@ z-index: 10;
  aboutme
  experience
  tools 
+
+
+ <div class="email-me-float">
+  <i class="fa-regular fa-message"></i>
+</div>
+
+<div class="float-logo-text"> <a href="#" class="" id="openPopup"><p>Email me</p></a></div>

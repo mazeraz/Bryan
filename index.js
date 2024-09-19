@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 let lastScrollTop = 0;
-const fixedDiv = document.getElementById('fixedDiv');
+const fixedDiv = document.getElementById('fixedDiv'); 
+const emailmefloat = document.getElementById('emailmefloat');
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -81,9 +82,13 @@ window.addEventListener('scroll', function() {
     if (scrollTop > lastScrollTop) {
         // Add the slide-up class to hide the div
         fixedDiv.classList.add('slide-up-flogo');
+        emailmefloat.classList.add('slide-up-flogo');
+
     } else {
         // Remove the class to bring the div back down
         fixedDiv.classList.remove('slide-up-flogo');
+        emailmefloat.classList.remove('slide-up-flogo');
+
     }
     lastScrollTop = scrollTop;
 });
