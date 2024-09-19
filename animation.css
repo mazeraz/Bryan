@@ -1,11 +1,8 @@
 html {
     scroll-behavior:smooth ;
-    cursor: url('img/M.png') 16 16, auto;
-
 }
 
-.cursor-hotspot {
-}
+
 
 /* Style for the floating button */
 #scrollToTopBtn {
@@ -43,6 +40,7 @@ html {
 
 /* mouse scroll down */ 
 .mouse-scroll {
+    z-index: 5;
     margin-top: 130px;
     position: absolute;
     left: 50%;
@@ -82,7 +80,7 @@ html {
 }
 
 .mouse {
-    z-index: 2;
+    z-index: 5;
     width: 29px;
     height: 45px;
     border: 2px solid #ffffff33; /* White border */
