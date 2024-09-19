@@ -3,131 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Form to Send Email</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Hidden by default */
-        .popup {
-            display: none;
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            border: 1px solid #ccc;
-            background-color: white;
-            padding: 20px;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-        }
-
-        /* Dark overlay */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 999;
-        }
-
-        /* Close button */
-        .close-btn {
-            float: right;
-            cursor: pointer;
-        }
-
-        /* Form styling */
-        .popup form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .popup form input,
-        .popup form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .popup form button {
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Swap Divs Animation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Anchor to trigger the pop-up -->
-    <a href="#" id="openPopup">Send Email</a>
-
-    <!-- Pop-up box -->
-    <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popupBox">
-        <span class="close-btn" id="closePopup">&times;</span>
-        <h3>Email Form</h3>
-        <form id="emailForm">
-            <input type="text" id="emailTitle" placeholder="Title" required>
-            <textarea id="emailDescription" placeholder="Description" rows="4" required></textarea>
-            <button type="submit">Send Email</button>
-        </form>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
     </div>
-
-    <script>
-        // Get elements
-        const popupBox = document.getElementById('popupBox');
-        const overlay = document.getElementById('overlay');
-        const openPopup = document.getElementById('openPopup');
-        const closePopup = document.getElementById('closePopup');
-        const emailForm = document.getElementById('emailForm');
-
-        // Open popup
-        openPopup.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
-            popupBox.style.display = 'block';
-            overlay.style.display = 'block';
-        });
-
-        // Close popup
-        closePopup.addEventListener('click', function () {
-            popupBox.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-
-        // Close popup when clicking outside the box
-        overlay.addEventListener('click', function () {
-            popupBox.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-
-        // Form submit
-        emailForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            
-            const title = document.getElementById('emailTitle').value;
-            const description = document.getElementById('emailDescription').value;
-
-            // Create mailto link with the form data
-            const mailtoLink = `mailto:example@example.com?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}`;
-
-            // Open email client with the mailto link
-            window.location.href = mailtoLink;
-
-            // Close popup
-            popupBox.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-    </script>
 </body>
 </html>
+
+<style>
+    /* styles.css */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232fd6;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+}
+
+.box1 {
+    background-color: rgb(223, 219, 0);
+    opacity: 1;
+    animation: swap 4s infinite;
+}
+
+.box2 {
+    background-color: rgb(145, 142, 142);
+    opacity: 0;
+    animation: swap 4s infinite;
+}
+
+@keyframes swap {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+</style>

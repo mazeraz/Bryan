@@ -1,5 +1,10 @@
 html {
     scroll-behavior:smooth ;
+    cursor: url('img/M.png') 16 16, auto;
+
+}
+
+.cursor-hotspot {
 }
 
 /* Style for the floating button */
