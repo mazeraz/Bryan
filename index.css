@@ -80,7 +80,7 @@ body {
 }
 
 .float-logo p {
-    transition: 0.5s ease-in-out
+    transition: 0.2s ease-in-out
 }
 
 .float-logo p:hover {
@@ -985,7 +985,6 @@ body {
     .namemain h1 {
         font-size: 1.9rem;
         margin:  0 auto;
-        width: 90%;
     }
   
  
@@ -1156,9 +1155,7 @@ body {
         z-index: 2;
     }
 
-    #element-vert-line {
-        left: 40px;
-    }
+    
     #element-vert-line-bot {
         display: block;
     }
